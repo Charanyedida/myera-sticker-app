@@ -1,0 +1,15 @@
+import React from 'react';
+
+const StickerButton = ({ stickerType, onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      className="sticker-button"
+      title={`Add ${stickerType.name} sticker`}
+    >
+      {stickerType.name}
+    </button>
+  );
+};
+
+export default StickerButton;
